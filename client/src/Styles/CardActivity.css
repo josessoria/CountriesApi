@@ -1,0 +1,12 @@
+.carddetails{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.carddetails p{
+    text-align: start;
+}

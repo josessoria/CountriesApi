@@ -1,0 +1,101 @@
+.actividades{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.formactivity{
+    width: 500px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+}
+
+.formactivity h1{
+    padding: 30px 30px 0px 30px;
+    text-align: start;
+    font-size: 22px;
+    color: #1d52ff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.formactivity h3{
+    color: #383838;;
+    padding: 0 30px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.formcreateactivity{
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.formcreateactivity label{
+    color: #383838;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formcreateactivity input{
+    width: 100%;
+    border: none;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    padding: 7px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+.formcreateactivity input:focus{
+    outline: none;
+}
+
+.containerlabel{
+    width: 100%;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.formcreateactivity select{
+    width: 100%;
+
+    height: 30px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.formcreateactivity select:focus{
+    outline: none;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.boton button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #1d52ff;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .formactivity{
+        width: 100%;
+    }
+  }

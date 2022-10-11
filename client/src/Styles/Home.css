@@ -1,0 +1,52 @@
+.homeContainer{
+    display: flex;
+}
+
+.filterVar{
+    width: 300px;
+    height: calc(100vh - 90px);
+    background-color: rgb(226, 226, 226);
+}
+
+.results{
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+.results h1{
+    margin: 30px 0px;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+
+}
+
+.searchbar input{
+    width: 180px;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 7px;
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+.lista{
+    width: 180px;
+    position: absolute;
+    background-color: rgb(247, 247, 247);
+}
+
+.lista div{
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 7px;
+    text-decoration: none;
+}
+
+.lista div a{
+    color: rgb(0, 0, 0);
+}

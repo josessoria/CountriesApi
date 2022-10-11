@@ -1,0 +1,23 @@
+.imageandetail{
+    width: 100%;
+    display: flex;
+    padding: 25px;
+}
+
+.paisdetail{
+    padding: 20px;
+    text-align: start;
+}
+.paisdetail h2{
+    margin-bottom: 10px;
+}
+
+.flagsimage{
+    width: 500px;
+}
+
+.actividades{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

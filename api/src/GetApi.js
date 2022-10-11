@@ -32,6 +32,9 @@ async function getApi() {
 
 }
 
+
+  
+
 module.exports={
-    getApi
+    getApi,
 }

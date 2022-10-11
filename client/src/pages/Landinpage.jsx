@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/LandinPage.css";
 import Map from "../Assets/map.svg";
+import { Link } from "react-router-dom";
 
 const Landinpage = () => {
   return (
@@ -12,10 +13,14 @@ const Landinpage = () => {
         <div className="titleLanding">
           <h1>Encontrá tu lugar</h1>
           <p>
-           Descubrí entre cientos de paises las actividades de cada lugar su Cultura, Lenguaje, Entre otras caracteristicas únicas de cada país, ve mas allá de tus fronteras, encuentra tu sitio.
+            Descubrí entre cientos de paises las actividades de cada lugar su
+            Cultura, Lenguaje, Entre otras caracteristicas únicas de cada país,
+            ve mas allá de tus fronteras, encuentra tu sitio.
           </p>
           <div className="buttontitle">
-            <button>Explore</button>
+            <Link to="/home">
+              <button>Explore</button>
+            </Link>
           </div>
         </div>
         <div className="imglanding">
