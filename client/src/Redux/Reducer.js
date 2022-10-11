@@ -30,7 +30,7 @@ export default function rootReducer(state = initialState, action) {
     case SEARCH_COUNTRY:
       return {
         ...state,
-        buscarCountry: action.payload,
+        filtro: action.payload,
       };
     case GET_COUNTRY_DETAIL:
       return {

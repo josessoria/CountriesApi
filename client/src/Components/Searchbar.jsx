@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 export default function SearchBar(){
     
-    const countries = useSelector((state)=>state.buscarCountry)
+    const countries = useSelector((state)=>state.filtro)
     const[search, setSearch] = useState('') 
     const dispatch =useDispatch()
     
@@ -16,7 +16,7 @@ export default function SearchBar(){
         }
     }  
     return(
-        <div>
+        <div className="searchbardiv">
             
             <input 
             type='text' 

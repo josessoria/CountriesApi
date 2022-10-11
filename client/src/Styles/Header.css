@@ -78,4 +78,10 @@
         margin-right: 30px;
     }
   }
+@media (max-width: 400px) {
+  .Logo{
+    padding-left: 30px;
+    font-size: 40px;
+  }
+  }
 

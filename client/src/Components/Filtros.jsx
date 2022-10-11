@@ -49,38 +49,36 @@ function Nav({ filtered, setPageNum }) {
       <div className={"contenedor_seccion1"}>
         <h2 className={"contenedor_seccion1_filtrar"}>FILTRAR</h2>
 
-        <div className={"contenedor_seccion1_filtrados"}>
-          <select
-            defaultValue={"DEFAULT"}
-            onChange={filterContinentes}
-            className={"filterContinentes"}
-          >
-            <option value={"DEFAULT"} disabled>
-              Continentes
-            </option>
-            <option value={"All"}>Todos</option>
-            <option value={"Africa"}>Africa</option>
-            <option value={"Antarctic"}>Antarctica</option>
-            <option value={"Americas"}>America</option>
+        <select
+          defaultValue={"DEFAULT"}
+          onChange={filterContinentes}
+          className={"filterContinentes"}
+        >
+          <option value={"DEFAULT"} disabled>
+            Continentes
+          </option>
+          <option value={"All"}>Todos</option>
+          <option value={"Africa"}>Africa</option>
+          <option value={"Antarctic"}>Antarctica</option>
+          <option value={"Americas"}>America</option>
 
-            <option value={"Asia"}>Asia</option>
-            <option value={"Europe"}>Europe</option>
-            <option value={"Oceania"}>Oceania</option>
-          </select>
-          <select
-            defaultValue={"DEFAULT"}
-            onChange={filterAZ}
-            className={"filterAZ"}
-          >
-            <option value={"DEFAULT"} disabled>
-              Alfabeticamente
-            </option>
-            <option value={"Asc"}>A-Z</option>
-            <option value={"Des"}>Z-A</option>
-          </select>
-        </div>
+          <option value={"Asia"}>Asia</option>
+          <option value={"Europe"}>Europe</option>
+          <option value={"Oceania"}>Oceania</option>
+        </select>
+        <select
+          defaultValue={"DEFAULT"}
+          onChange={filterAZ}
+          className={"filterAZ"}
+        >
+          <option value={"DEFAULT"} disabled>
+            Alfabeticamente
+          </option>
+          <option value={"Asc"}>A-Z</option>
+          <option value={"Des"}>Z-A</option>
+        </select>
 
-        <div className={"contenedor_seccion1_filtrados"}>
+
           <select
             defaultValue={"DEFAULT"}
             onChange={filterPopulation}
@@ -92,34 +90,13 @@ function Nav({ filtered, setPageNum }) {
             <option value={"Asc"}>Mayor población</option>
             <option value={"Des"}>Menor población</option>
           </select>
-        </div>
+
 
         <button onClick={handleClick} className={"contenedor_seccion1_btn"}>
-          Cargar paises
+          Borrar Filtros
         </button>
-
-        <div className={"contenedor_seccion1_Act"}>
-          <select
-            id={"mySelect"}
-            defaultValue={"DEFAULT"}
-            onChange={filterActivity}
-            className={"filterAct"}
-          >
-            <option value={"DEFAULT"} disabled>
-              Seleccionar
-            </option>
-            {activities?.map((e) => {
-              return (
-                <option key={e.id} value={e.nombre}>
-                  {e.nombre}
-                </option>
-              );
-            })}
-          </select>
-        </div>
       </div>
 
-      {/* MODO RESPONSIVE */}
     </div>
   );
 }

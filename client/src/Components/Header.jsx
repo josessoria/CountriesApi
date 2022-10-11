@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Header.css";
 import { Link } from "react-router-dom";
 import menu from "../Assets/menu.png";
 
-const d = () => {
+const D = () => {
+  const [Menu, setMenu] = useState(false);
+
+  const HandleState = () => {
+    setMenu(!Menu)
+    console.log(Menu)
+  };
   return (
     <div className="Header">
       <Link to="/home">
@@ -25,7 +31,7 @@ const d = () => {
           </div>
 
           <div className="menucontent">
-            <img src={menu} alt="" />
+            <img src={menu} alt="" onClick={HandleState} />
           </div>
         </div>
       </div>
@@ -33,4 +39,4 @@ const d = () => {
   );
 };
 
-export default d;
+export default D;
